@@ -29,8 +29,8 @@ function countBs(word){
 }
 
 function countChar(word, letter){
-    const wordLower = word;
-    const letterLower = letter;
+    const wordLower = word.toLowerCase();
+    const letterLower = letter.toLowerCase();
     let counter = 0;
     for(let count = 0; count < word.length; count++){
         if(wordLower[count]===letterLower){
@@ -43,4 +43,4 @@ function countChar(word, letter){
 console.log(countBs('BBc'));
 
 console.log(countChar('kakkerlak','k'));
-console.log(countChar('kakKerlak','K'));
+console.log(countChar('kakKerlakKk','K'));
