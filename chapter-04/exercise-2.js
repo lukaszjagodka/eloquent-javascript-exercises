@@ -26,5 +26,5 @@ function reverseArrayInPlace(arrayValue){
     for (let z = lengthOfArray; z >=0; z--){
         arrayValue.push(helperArray[z]);
     }
-    return console.log(arrayValue);
+    return arrayValue;
 };
